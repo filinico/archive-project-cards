@@ -1,31 +1,32 @@
 {
-  "name": "typescript-action",
-  "version": "0.0.0",
+  "name": "archive-project-cards",
+  "version": "1.0.0",
   "private": true,
-  "description": "TypeScript template action",
-  "main": "lib/main.js",
+  "description": "Archive project cards",
+  "main": "src/main.ts",
   "scripts": {
-    "build": "tsc",
     "format": "prettier --write **/*.ts",
     "format-check": "prettier --check **/*.ts",
     "lint": "eslint src/**/*.ts",
     "package": "ncc build --source-map --license licenses.txt",
     "test": "jest",
-    "all": "npm run build && npm run format && npm run lint && npm run package && npm test"
+    "all": "npm run format && npm run lint && npm run package && npm test"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/actions/typescript-action.git"
+    "url": "git+https://github.com/filinico/archive-project-cards"
   },
   "keywords": [
     "actions",
     "node",
-    "setup"
+    "setup",
+    "project"
   ],
-  "author": "",
+  "author": "Nicolas Filippelli",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.4.0"
+    "@actions/core": "^1.4.0",
+    "@actions/github": "^4.0.0"
   },
   "devDependencies": {
     "@types/node": "^16.3.3",
