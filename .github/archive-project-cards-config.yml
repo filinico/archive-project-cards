@@ -1,2 +1,3 @@
 projectsDoneColumns: !!omap
-  - refs/heads/main: 15481947
+  refs/heads/main: 15481947
+  refs/heads/test: 15481948
